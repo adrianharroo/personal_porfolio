@@ -15,6 +15,8 @@ html, body {
 body {
     font-family: Inter, Arial, sans-serif;
     background-color: hsl(223, 52%, 12%);
+    display: flex;
+    justify-content: center;
 }
 
 h1 {
@@ -62,38 +64,28 @@ a {
 }
 
 section {
-    margin-top: 5vh;
-    margin-bottom: 10vh;
+    /* margin-bottom: 10vh; */
 }
 
 
 /* Fixed Hero Section */
 
 .container {
-    /* border: solid 1px; */
     display: flex;
-    margin-left: 15vw;
-    margin-right: 15vw;
-    height: 92vh; 
+    justify-content: space-between;
+    gap: 2vw;
+    margin: 5vh 10vw;
+    width: 70vw;
+    height: 90vh;
 }
 
 .fixed {
-    /* border: solid 1px; */
-    height: 100vh;
-    width: 50%;
     display: flex;
-
+    flex-direction: column;
+    width: 50%;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
 }
-
-.hero-container {
-    margin-top: 10vh;
-    margin-bottom: 5vh;
-}
-
-.hero-container img {
-    height: 10vh;
-}
-
 
 .hero-info {
     line-height: 3vh;
@@ -105,11 +97,7 @@ section {
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
-    /* width: 100vw; */
-    /* margin-left: 15vw; */
-    /* margin-right: 25vw; */
     margin-bottom: 5vh;
-    /* border: solid 1px; */
 }
 
 .navbar li {
@@ -133,8 +121,6 @@ section {
 .socials {
     display: flex;
     justify-content: flex-start;
-    /* margin-top: 45vh; */
-    /* margin-bottom: 10vh; */
 }
 
 .socials i {
@@ -149,16 +135,11 @@ section {
     color: white;
 }
 
-
-
 /* Scrollable Section */
 
 .scrollable {
-    /* border: solid 1px; */
-    margin-top: 5vh;
-    left: 50vw;
-    height: 100vh;
     width: 50%;
+    padding-bottom: 5vh;
     overflow-y: scroll;
     scroll-behavior: smooth;
 }
@@ -169,6 +150,10 @@ section {
 }
 .scrollable::-webkit-scrollbar { 
     display: none;  /* Safari and Chrome */
+}
+
+#about, #skills, #experience, #projects, #education {
+    padding-top: 5vh;
 }
 
 #about-paragraph {
@@ -247,5 +232,4 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
